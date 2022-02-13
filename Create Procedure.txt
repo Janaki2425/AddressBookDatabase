@@ -1,0 +1,15 @@
+create procedure [dbo].[SpAddAddress]
+(
+@FirstName varchar(50),
+@LastName varchar(50),
+@PhoneNumber varchar(10),
+@Address varchar(255),
+@State varchar(255),
+@ZIP varchar(6), 
+@City varchar(255),
+@Email varchar(255)
+)
+as
+begin
+Insert into Address values(@FirstName,@LastName,@PhoneNumber,@Address,@State,@ZIP,@City,@Email)
+end
